@@ -20,6 +20,6 @@ def login(request):
                     return HttpResponse('Conta não-ativa')
             else:
                 return HttpResponse('Login inválido')
-        else:
-            form = LoginForm()
-        return render(request, 'socialmedia/pages/login.html', {'form': form})
+    else:
+        form = LoginForm()
+    return render(request, 'socialmedia/pages/login.html', {'form': form})
