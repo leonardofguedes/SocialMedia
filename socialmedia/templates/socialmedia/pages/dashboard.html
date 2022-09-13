@@ -2,5 +2,5 @@
 
 {% block content %}
     <h1>Dashboard</h1>
-    <p>Bem-vindo a sua dashboard</p>
+    <p>Bem-vindo a sua dashboard, {{ request.user.first_name }}</p>
 {% endblock %}
