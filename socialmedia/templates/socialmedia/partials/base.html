@@ -1,9 +1,16 @@
 {% load static %}
 
-<head></head>
-<header></header>
+<head>
+    {% include 'socialmedia/partials/head.html' %}
+</head>
 <body>
+
+{% include 'socialmedia/partials/header.html' %}
+
+<div class="main-container">
     {% block content %}
     {% endblock %}
-</body>
+</div>
+
 <footer></footer>
+<body>
